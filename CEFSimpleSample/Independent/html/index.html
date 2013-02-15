@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Test SQLite3 Form</title>
+	<link rel="stylesheet" href="css/bootstrap.min.css" media="screen">
+	<style type="text/css">
+	   div.container { width: 500px; }
+	   div.container h2 { text-align:center; }
+	   .btn { margin: 10px 11px; }
+	   div.alert { text-align:center; font-weight: bold; font-size: 85% }
+	</style>
+</head>
+<body>
+	<div id="wrapper">
+	    
+	    <div class="container">
+	        <h2 id="text">CEF SQLite3 Test</h2>
+	        
+	        <form action="#" class="form-horizontal">
+	            <fieldset>
+                    <legend><i class="icon-pencil"></i> Data Input Form</legend>
+                    <div id="alertBox"></div>
+                    <input type="hidden" id="inputID">
+                    <div class="control-group">
+                        <label for="inputName" class="control-label">Name</label>
+                        <div class="controls">
+                            <input type="text" id="inputName" placeholder="Name">
+                        </div>
+                    </div>
+                    <div class="control-group">
+                        <label for="inputPhoneNumber" class="control-label">Phone Number</label>
+                        <div class="controls">
+                            <input type="text" id="inputPhoneNumber" placeholder="Phone Number">
+                        </div>                        
+                    </div>
+                    
+                    <div class="control-group">                        
+                        <button type="submit" class="btn" id="btnInsert">Insert Data</button>
+                        <button type="button" class="btn" id="btnUpdate">Update Data</button>
+                        <button type="button" class="btn" id="btnReset">Reset Form</button>
+                        <button type="button" class="btn" id="btnDropDB">Drop Table</button>
+                    </div>
+                </fieldset>
+	        </form>
+	    </div>
+	    
+	    <div id="results" class="container">	        
+	        <h4>SQLite db file content</h4>	        
+	        <table class="table">
+	            <thead>
+	                <tr>
+	                    <th>#</th>
+	                    <th>Name</th>
+                        <th>Phone Number</th>
+                        <th></th>
+	                </tr>	                
+	            </thead>
+	            <tbody id="dataBody">
+	                
+	            </tbody>
+	        </table>
+	    </div>
+	    
+	</div>
+	
+	<script src="js/jquery-1.9.0.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script src="js/app.js"></script>
+</body>
+</html>
