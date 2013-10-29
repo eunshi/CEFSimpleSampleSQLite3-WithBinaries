@@ -4,7 +4,7 @@ A simple application to test CEF integration with SQLite3.
 
 This branch include all CEF binary files.
 
-Based on CEF simple sample app by [Álan Crístoffer](https://github.com/acristoffers/CEFSimpleSample).
+Based on CEF simple sample by [Álan Crístoffer](https://github.com/acristoffers/CEFSimpleSample).
 
 LICENSE
 -------
